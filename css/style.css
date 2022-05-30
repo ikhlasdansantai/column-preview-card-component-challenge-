@@ -56,19 +56,19 @@ body {
   padding: 1rem;
 }
 main {
-  text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+  text-align: center;
 }
 .card-wrapper {
-  max-width: 20rem;
+  margin: auto;
 }
 .cards {
   text-align: left;
   background-color: var(--Bright-Orange);
   padding: 2rem;
+  max-width: 20rem;
 }
 .cards:first-child {
   border-radius: 1rem 1rem 0 0;
@@ -96,8 +96,12 @@ main {
   margin-top: 2rem;
   font-size: 1.5em;
   font-family: sans-serif;
+  display: block;
 }
 @media (min-width: 576px) {
+  main {
+    flex-direction: column;
+  }
   .card-wrapper {
     display: flex;
     justify-content: center;
