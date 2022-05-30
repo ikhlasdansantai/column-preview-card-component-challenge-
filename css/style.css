@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+:root {
+  --Bright-Orange: hsl(31, 77%, 52%);
+  --Dark-Cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white-par: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+.img {
+  display: block;
+  max-width: 100%;
+}
+.title {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--transparent-white-par);
+  letter-spacing: 1px;
+  line-height: 2;
+}
+.btn {
+  background: var(--very-light-gray);
+  outline: none;
+  border: none;
+  width: 70%;
+  min-width: 50%;
+  padding: 1rem;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  color: var(--Bright-Orange);
+  font-family: "Lexend Deca", sans-serif;
+}
+.card-text {
+  color: var(--transparent-white-par);
+  font-family: "Lexend Deca", sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Big Shoulders Display", cursive;
+  background-color: var(--very-light-gray);
+  padding: 1rem;
+}
+main {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card-wrapper {
+  max-width: 20rem;
+}
+.cards {
+  text-align: left;
+  background-color: var(--Bright-Orange);
+  padding: 2rem;
+}
+.cards:first-child {
+  border-radius: 1rem 1rem 0 0;
+}
+.cards:nth-child(2) {
+  background-color: var(--Dark-Cyan);
+}
+.btn-suvs {
+  color: var(--Dark-Cyan);
+}
+.cards:last-child {
+  border-radius: 0 0 1rem 1rem;
+  background-color: var(--very-dark-cyan);
+}
+.btn-luxury {
+  color: var(--very-dark-cyan);
+}
+.card-content {
+  margin-top: 1rem;
+}
+.title {
+  font-size: 3em;
+}
+.attribution {
+  margin-top: 2rem;
+  font-size: 1.5em;
+  font-family: sans-serif;
+}
+@media (min-width: 576px) {
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cards {
+    max-width: 20rem;
+  }
+  .cards:first-child {
+    border-radius: 1rem 0 0 1rem;
+  }
+  .cards:last-child {
+    border-radius: 0 1rem 1rem 0;
+  }
+  .btn {
+    margin-top: 5rem;
+  }
+}
